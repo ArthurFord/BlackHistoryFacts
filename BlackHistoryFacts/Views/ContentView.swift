@@ -35,7 +35,7 @@ struct ContentView: View {
                 NavigationLink(destination: ContributorView()) {
                     Text("Contribute")
                         .font(.title3)
-                        .padding()
+                        
                 }
                 Spacer()
             }
