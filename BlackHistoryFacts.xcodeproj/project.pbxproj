@@ -17,6 +17,9 @@
 		CE733C132744503900AB0086 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE733C122744503900AB0086 /* ShareSheet.swift */; };
 		CE733C152746751F00AB0086 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE733C142746751F00AB0086 /* Header.swift */; };
 		CE733C172748847500AB0086 /* BHF-PList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE733C162748847500AB0086 /* BHF-PList.plist */; };
+		CEF90B6E2748E4AE00322B0E /* ContributorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF90B6D2748E4AE00322B0E /* ContributorView.swift */; };
+		CEF90B702748E69400322B0E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF90B6F2748E69400322B0E /* WebView.swift */; };
+		CEF90B722748E6D900322B0E /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF90B712748E6D900322B0E /* WebViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		CE733C122744503900AB0086 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		CE733C142746751F00AB0086 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		CE733C162748847500AB0086 /* BHF-PList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BHF-PList.plist"; sourceTree = "<group>"; };
+		CEF90B6D2748E4AE00322B0E /* ContributorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorView.swift; sourceTree = "<group>"; };
+		CEF90B6F2748E69400322B0E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		CEF90B712748E6D900322B0E /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 				CE733C0D2741388A00AB0086 /* FactCard.swift */,
 				CE733C122744503900AB0086 /* ShareSheet.swift */,
 				CE733C142746751F00AB0086 /* Header.swift */,
+				CEF90B6D2748E4AE00322B0E /* ContributorView.swift */,
+				CEF90B6F2748E69400322B0E /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				CE733C102741395B00AB0086 /* FactService.swift */,
+				CEF90B712748E6D900322B0E /* WebViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,10 +192,13 @@
 				CE733C112741395B00AB0086 /* FactService.swift in Sources */,
 				CE733C132744503900AB0086 /* ShareSheet.swift in Sources */,
 				CE733BFC274130FB00AB0086 /* ContentView.swift in Sources */,
+				CEF90B722748E6D900322B0E /* WebViewModel.swift in Sources */,
 				CE733C152746751F00AB0086 /* Header.swift in Sources */,
 				CE733C0E2741388A00AB0086 /* FactCard.swift in Sources */,
 				CE733C092741321A00AB0086 /* Fact.swift in Sources */,
+				CEF90B702748E69400322B0E /* WebView.swift in Sources */,
 				CE733BFA274130FB00AB0086 /* BlackHistoryFactsApp.swift in Sources */,
+				CEF90B6E2748E4AE00322B0E /* ContributorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
