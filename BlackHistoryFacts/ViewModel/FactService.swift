@@ -15,11 +15,11 @@ private actor FactServiceStore {
     
     private var apiKey: String {
         get {
-                // 1
+                // find file
             guard let filePath = Bundle.main.path(forResource: "BHF-PList", ofType: "plist") else {
                 fatalError("Couldn't find file 'BHF-PList.plist'.")
             }
-                // 2
+                // find key
             let plist = NSDictionary(contentsOfFile: filePath)
             guard let value = plist?.object(forKey: "API_KEY") as? String else {
                 fatalError("Couldn't find key 'API_KEY' in 'BHF-PList.plist'.")
