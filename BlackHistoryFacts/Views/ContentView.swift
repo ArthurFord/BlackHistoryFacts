@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
             VStack {
                 ZStack(alignment: .topTrailing) {
                     ZStack {
@@ -32,15 +31,22 @@ struct ContentView: View {
                 }
                 FactCard()
                     .padding()
-                NavigationLink(destination: ContributorView()) {
-                    Text("Contribute")
-                        .font(.title3)
-                        
-                }
+                    .padding(.top, 30)
                 Spacer()
+                
+                    Link(destination: URL(string: "https://blackhistoryapi.com/register")!) {
+                        Text("Sign up to contribute")
+                            .font(.title3)
+                            .fontWeight(.semibold)
+                    }
+                        
+                
+                Spacer()
+                Rectangle()
+                    .frame(height: 50)
             }
-            .navigationBarHidden(true)
-        }
+           
+        
     }
 }
 
