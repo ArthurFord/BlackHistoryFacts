@@ -17,9 +17,13 @@
 		CE733C132744503900AB0086 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE733C122744503900AB0086 /* ShareSheet.swift */; };
 		CE733C152746751F00AB0086 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE733C142746751F00AB0086 /* Header.swift */; };
 		CE733C172748847500AB0086 /* BHF-PList.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE733C162748847500AB0086 /* BHF-PList.plist */; };
+		CEB351C5274A749200A43CC3 /* GADViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB351C4274A749200A43CC3 /* GADViewRepresentable.swift */; };
+		CEF90B76274A66F500322B0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEF90B75274A66F500322B0E /* GoogleService-Info.plist */; };
+		D6529ABD20112D8D65E40067 /* Pods_BlackHistoryFacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11E23E1BB5A7E54175DCE3C /* Pods_BlackHistoryFacts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C11E23E1BB5A7E54175DCE3C /* Pods_BlackHistoryFacts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHistoryFacts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE733BF6274130FB00AB0086 /* BlackHistoryFacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHistoryFacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE733BF9274130FB00AB0086 /* BlackHistoryFactsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHistoryFactsApp.swift; sourceTree = "<group>"; };
 		CE733BFB274130FB00AB0086 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +35,11 @@
 		CE733C122744503900AB0086 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		CE733C142746751F00AB0086 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		CE733C162748847500AB0086 /* BHF-PList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BHF-PList.plist"; sourceTree = "<group>"; };
+		CEB351C1274A707600A43CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CEB351C4274A749200A43CC3 /* GADViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GADViewRepresentable.swift; sourceTree = "<group>"; };
+		CEF90B75274A66F500322B0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAE8D81FA80B9169087B9F35 /* Pods-BlackHistoryFacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHistoryFacts.debug.xcconfig"; path = "Target Support Files/Pods-BlackHistoryFacts/Pods-BlackHistoryFacts.debug.xcconfig"; sourceTree = "<group>"; };
+		FFDF38A74B89DA2FE1428775 /* Pods-BlackHistoryFacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlackHistoryFacts.release.xcconfig"; path = "Target Support Files/Pods-BlackHistoryFacts/Pods-BlackHistoryFacts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6529ABD20112D8D65E40067 /* Pods_BlackHistoryFacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		478406757E505A73A8265AD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C11E23E1BB5A7E54175DCE3C /* Pods_BlackHistoryFacts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91A3F8842134031431C7DB9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EAE8D81FA80B9169087B9F35 /* Pods-BlackHistoryFacts.debug.xcconfig */,
+				FFDF38A74B89DA2FE1428775 /* Pods-BlackHistoryFacts.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CE733BED274130FB00AB0086 = {
 			isa = PBXGroup;
 			children = (
 				CE733BF8274130FB00AB0086 /* BlackHistoryFacts */,
 				CE733BF7274130FB00AB0086 /* Products */,
+				91A3F8842134031431C7DB9C /* Pods */,
+				478406757E505A73A8265AD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +92,10 @@
 		CE733BF8274130FB00AB0086 /* BlackHistoryFacts */ = {
 			isa = PBXGroup;
 			children = (
+				CEB351C1274A707600A43CC3 /* Info.plist */,
 				CE733BF9274130FB00AB0086 /* BlackHistoryFactsApp.swift */,
 				CE733C162748847500AB0086 /* BHF-PList.plist */,
+				CEF90B75274A66F500322B0E /* GoogleService-Info.plist */,
 				CE733C0F2741393D00AB0086 /* ViewModel */,
 				CE733C0C2741382E00AB0086 /* Views */,
 				CE733C072741320600AB0086 /* Model */,
@@ -93,6 +124,7 @@
 		CE733C0C2741382E00AB0086 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEB351C4274A749200A43CC3 /* GADViewRepresentable.swift */,
 				CE733BFB274130FB00AB0086 /* ContentView.swift */,
 				CE733C0D2741388A00AB0086 /* FactCard.swift */,
 				CE733C122744503900AB0086 /* ShareSheet.swift */,
@@ -116,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE733C04274130FD00AB0086 /* Build configuration list for PBXNativeTarget "BlackHistoryFacts" */;
 			buildPhases = (
+				65F148B3C5602D75DE9434B6 /* [CP] Check Pods Manifest.lock */,
 				CE733BF2274130FB00AB0086 /* Sources */,
 				CE733BF3274130FB00AB0086 /* Frameworks */,
 				CE733BF4274130FB00AB0086 /* Resources */,
+				B380E0773DE8BEA6E05797E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,12 +202,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE733C01274130FD00AB0086 /* Preview Assets.xcassets in Resources */,
+				CEF90B76274A66F500322B0E /* GoogleService-Info.plist in Resources */,
 				CE733BFE274130FD00AB0086 /* Assets.xcassets in Resources */,
 				CE733C172748847500AB0086 /* BHF-PList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F148B3C5602D75DE9434B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlackHistoryFacts-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B380E0773DE8BEA6E05797E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHistoryFacts/Pods-BlackHistoryFacts-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BlackHistoryFacts/Pods-BlackHistoryFacts-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BlackHistoryFacts/Pods-BlackHistoryFacts-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE733BF2274130FB00AB0086 /* Sources */ = {
@@ -183,6 +260,7 @@
 				CE733C112741395B00AB0086 /* FactService.swift in Sources */,
 				CE733C132744503900AB0086 /* ShareSheet.swift in Sources */,
 				CE733BFC274130FB00AB0086 /* ContentView.swift in Sources */,
+				CEB351C5274A749200A43CC3 /* GADViewRepresentable.swift in Sources */,
 				CE733C152746751F00AB0086 /* Header.swift in Sources */,
 				CE733C0E2741388A00AB0086 /* FactCard.swift in Sources */,
 				CE733C092741321A00AB0086 /* Fact.swift in Sources */,
@@ -311,6 +389,7 @@
 		};
 		CE733C05274130FD00AB0086 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAE8D81FA80B9169087B9F35 /* Pods-BlackHistoryFacts.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,6 +399,7 @@
 				DEVELOPMENT_TEAM = SLB347Y94F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlackHistoryFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +422,7 @@
 		};
 		CE733C06274130FD00AB0086 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDF38A74B89DA2FE1428775 /* Pods-BlackHistoryFacts.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +432,7 @@
 				DEVELOPMENT_TEAM = SLB347Y94F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BlackHistoryFacts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 private actor FactServiceStore {
     private var loadedResult = Result(totalResults: 0, results: [Fact(source: "", text: "")])
     private var url: URL {

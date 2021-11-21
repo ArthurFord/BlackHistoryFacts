@@ -42,8 +42,7 @@ struct ContentView: View {
                         
                 
                 Spacer()
-                Rectangle()
-                    .frame(height: 50)
+                Banner()
             }
            
         
